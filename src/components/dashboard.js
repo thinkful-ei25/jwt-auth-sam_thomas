@@ -3,13 +3,11 @@ import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import {fetchProtectedData} from '../actions/protected-data';
 
+
 export class Dashboard extends React.Component {
     componentDidMount() {
         this.props.dispatch(fetchProtectedData());
     }
-
-    //popup for inactivity with button that allows to refreshAuthToken
-    //gives dialogue box 1 minute before closing - 4 minute timer, 1 minute timer
 
     render() {
         return (
