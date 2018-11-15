@@ -8,6 +8,9 @@ export class Dashboard extends React.Component {
         this.props.dispatch(fetchProtectedData());
     }
 
+    //popup for inactivity with button that allows to refreshAuthToken
+    //gives dialogue box 1 minute before closing - 4 minute timer, 1 minute timer
+
     render() {
         return (
             <div className="dashboard">
